@@ -8,6 +8,21 @@ doc: <https://github.com/sceext2/fm01/tree/main/doc/libfm-rs>
 TODO
 
 
+## Cargo features
+
+default: `target_stm32f103c8_bp`
+
++ **`target_stm32f103c8_bp`** (TODO)
+
++ **`target_stm32f103re_c1`** (TODO)
+
++ **`target_stm32f030rc_c1`** (TODO)
+
++ **`test_target_core`** (TODO)
+
++ **`test_target_full`** (TODO)
+
+
 ## LICENSE
 
 ```

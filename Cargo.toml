@@ -4,4 +4,18 @@ version = "0.1.0"
 authors = ["sceext <sceext@foxmail.com>"]
 edition = "2018"
 
+[features]
+default = ["target_stm32f103c8_bp"]
+target_stm32f1 = ["libfmshal/target_stm32f1"]
+target_stm32f0 = ["libfmshal/target_stm32f0"]
+target_stm32f103c8_bp = ["target_stm32f1", "libfmhal/target_stm32f103c8"]
+target_stm32f103re_c1 = ["target_stm32f1", "libfmhal/target_stm32f103re"]
+target_stm32f030rc_c1 = ["target_stm32f0", "libfmhal/target_stm32f030rc"]
+test_target_core = []
+test_target_full = ["test_target_core"]
+
 [dependencies]
+libfmp = { path = "../libfmp.rs", features = ["fmp_uart_fmprinter"] }
+libfmshal = { path = "../libfmshal.rs" }
+libfmel = { path = "../libfmel.rs" }
+libfmhal = { path = "../libfmhal.rs" }
